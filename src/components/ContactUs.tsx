@@ -1,12 +1,12 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function ContactUs() {
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(false);
 
-  const handleChange = () => {
-    setChecked(!checked);
-  };
+  // const handleChange = () => {
+  //   setChecked(!checked);
+  // };
   return (
     <section>
       {/* Container */}
@@ -32,7 +32,7 @@ export default function ContactUs() {
                 type="text"
                 className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-black"
                 placeholder=""
-                required=""
+                required
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ export default function ContactUs() {
                 type="text"
                 className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-black"
                 placeholder=""
-                required=""
+                required
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ContactUs() {
                 type="text"
                 className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-black"
                 placeholder=""
-                required=""
+                required
               />
             </div>
             <div>
@@ -68,7 +68,7 @@ export default function ContactUs() {
                 type="text"
                 className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-black"
                 placeholder=""
-                required=""
+                required
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function ContactUs() {
             </label>
             <textarea
               placeholder=""
-              maxLength="5000"
+              maxLength={5000}
               name="field"
               className="mb-2.5 block h-auto min-h-44 w-full rounded-md border border-solid border-black px-3 py-2 text-sm text-black"
             ></textarea>
